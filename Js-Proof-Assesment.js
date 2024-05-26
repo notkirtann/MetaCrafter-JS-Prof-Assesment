@@ -5,7 +5,7 @@ const Football_Container = []
 
 // function to mint NFT
 // it takes some parameters as input (insta_id,name,age,Country,Club)
-function Football_Data(insta_id,name,age,Country,Club){
+function minNFT(insta_id,name,age,Country,Club){
 
     // creatting an object to store the details of the NFT
     football = {
@@ -44,12 +44,12 @@ function getTotalSupply(){
     return Football_Container.length
 }
 
-// calling Football_Data function with few random data
-Football_Data("@cristiano","Cristiano Ronaldo",38,"Portugal","Al Nassr")
-Football_Data("@leoMessi","Lionel Messi",36,"Argentina","Inter Miami")
-Football_Data("@SergioRamos","Sergio Ramos",36,"Spain","Sevilla")
-Football_Data("@LukaModric10","Luka Modric",37,"Crotia","Real Madrid")
-Football_Data("@Toni.kr8s","Toni Kross",34,"Germany","Real Madrid")
+// calling minNFT function with few random data
+minNFT("@cristiano","Cristiano Ronaldo",38,"Portugal","Al Nassr")
+minNFT("@leoMessi","Lionel Messi",36,"Argentina","Inter Miami")
+minNFT("@SergioRamos","Sergio Ramos",36,"Spain","Sevilla")
+minNFT("@LukaModric10","Luka Modric",37,"Crotia","Real Madrid")
+minNFT("@Toni.kr8s","Toni Kross",34,"Germany","Real Madrid")
 
 // calling listNFTs function to print the NFT collection
 listNFTs()
